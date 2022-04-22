@@ -1,0 +1,37 @@
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes balloons-left {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(4deg);
+  }
+}
+
+@keyframes balloons-right {
+    0%,
+    100% {
+      transform: translateY(0) rotate(356deg);
+    }
+    50% {
+      transform: translateY(25px) rotate(364deg);
+    }
+  }

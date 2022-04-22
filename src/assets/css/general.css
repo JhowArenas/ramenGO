@@ -1,0 +1,134 @@
+
+/* #region PreSets */
+* {
+  font-family: "M PLUS Rounded 1c";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #000000;
+}
+body{
+  background-color: #fafaed;
+}
+img{
+  max-width: 100%;
+}
+/* #endregion PreSets */
+
+/* #region ScrollBar  */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #ee675e;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4e42;
+}
+/* #endregion ScrollBar  */
+
+/* #region Font Colors */
+.c-white {
+  color: #fafaed;
+}
+.c-red {
+  color: #ff4e42;
+}
+.c-blue {
+  color: #1820ef;
+}
+.c-yellow {
+  color: #ffc024;
+}
+/* #endregion Font Colors */
+
+/* #region Backgroound Colors */
+.bg-white {
+  background-color: #fafaed;
+}
+.bg-red {
+  background-color: #ff4e42;
+}
+.bg-blue {
+  background-color: #1820ef;
+}
+.bg-yellow {
+  background-color: #ffc024;
+}
+.bg-gray {
+  background-color: #C5C5C5;
+}
+/* #endregion Backgroound Colors */
+
+/* #region Button Default */
+.bt {
+  border-radius: 50px;
+  padding: 20px 30px;
+  text-align: left;
+  font-size: 14px;
+  border: unset;
+  font-weight: 600;letter-spacing: 1px;cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.bt svg{
+  margin-left: 10px;
+}
+.bt:hover svg{
+    animation:shake 4s ease-in-out infinite;
+}
+/* #endregion Button Default */
+
+.container{
+  width: 100%;
+  max-width: 1087px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 19px 15px 60px;
+}
+
+
+.title {
+  font-weight: 900;
+  font-size: 32px;
+  text-align: center;
+  margin: 96px 0 4px;
+}
+.subtitle {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 47px;
+}
+
+/* #region Modal Default */
+.modal{
+  position: fixed;
+  top: -110vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #fafaed;
+  z-index: 3;
+  display: flex;
+  transition: opacity .3s ease-in-out, top .3s ease-in-out;
+}
+.modal-open {
+  overflow: hidden;
+}
+.modal-open .modal{
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+/* #endregion Modal Default */
